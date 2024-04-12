@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body onload="calculateMyAge()" id="body">
+   
+        <div class="bgPic" id = "imageContainer"><img alt= "Profile Pic" id="backPic" class = "profilePic" src="images/profile_pic.jpg"/>
+        <div class = "nameDescription"> <div class = "name">Keymani Reid</div>
+        Implementation Consultant - Novice Game Designer</div>
+        <ul class = "navigation">
+           <li><a href="javascript:void(0);" onclick="showIntro();">Home</a></li> |
+            <li><a href="javascript:void(0);" onclick="showBio();">Bio</a></li> |
+            <li><a href="javascript:void(0);" onclick="showResume();">Resume</a></li> | 
+            <li><a href="javascript:void(0);" onclick="showTimeline();">Journey</a></li> |
+            <li><a href="javascript:void(0);" onclick="showContact();">Contact</a></li> 
+        </ul>
+        </div>
+
+        <div class = "intro">
+           <p class="introText" id="introText" style="color: black">Welcome to my Profile Page! I created this page from scratch to showcase a quick bio about myself while also having a place to showcase and work on my
+                Web Design skills. This will also serve as a great resource for different companies to view who I am and what I am about as a way to meet me digitally 
+                before meeting me physically. If you have any suggestions or ways that would make this profile page more user friendly please do not hesitate as you would be 
+                helping me become a developer!
+            </p>
+        </div>
+
+
+            <div class = "linksContainer">
+                <p style="color: white">My links:</p>
+                <a href="https://twitter.com/" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class = "bio">
+            <p style ="color: black"> 
+                Hello, my name is Keymani Reid and I am currently <age id="age"></age> years old. I was born and raised in the Bronx, New York City and was there for a majority of my life until I graduated High
+                School. After High School, I attended thee illustrious Clark Atlanta University located in the heart of Atlanta, Georgia. In 2019, as computer science major, I graduated Valedictorian with
+                a 4.0 GPA. <br><br> 
+                After graduating with a BS in Computer Science, I became an Implementation Consultant with FAST Enterprises implementing software for statewide government agencies such as the Department of Revenue,
+                Department of Motor Vehicles, and also Unemployement agencies.
+            </p>
+        </div>
+
+        <div class = "classContainer">
+            <div class = "contactTop">
+                <h2>Contact Me</h2>
+                <p>Let me know how I can improve this site and/or report any bugs you may find:</p>
+            </div>
+            <div class = "infoInput">
+                <form action = "utility.php" method="post">
+                    <label for="fname">First Name</label>
+                        <input type = "text" id="fname" name="firstname" placeholder="Your first name...">
+                    <label for="lname">Last Name</label><br>
+                        <input type = "text" id="lname" name="lastname" placeholder="Your last name...">
+                    <label for="email">Email</label>
+                        <input type = "text" id="email" name="email" placeholder="Your email...">
+                    <label for="message">Message</label>
+                        <textarea id="msg" name="message" placeholder="Write something..." style="height:170px"></textarea>
+                        <input type = "submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        <div class = "timeline">
+            <div class = "timeContainer left">
+                <div class = "timelineContent">
+                    <h2>1997 <img src="images/babyIcon.png" class = "timelineImage"/></h2>
+                    <p>October 17th I was born in  in the Bronx, NYC</p>
+                </div>
+            </div>
+
+            <div class = "timeContainer right">
+                <div class = "timelineContent">
+                    <h2>2001</h2>
+                    <p>Started attending school (Pre-K) in Harlem, NYC</p>
+                </div>
+            </div>
+
+            <div class = "timeContainer left">
+                <div class = "timelineContent">
+                    <h2>2003</h2>
+                    <p>Moved to and began semi-home schooling for 1st-2nd grade in Ft. Lauderdale, Florida</p>
+                </div>
+            </div>
+
+            <div class = "timeContainer right">
+                <div class = "timelineContent">
+                    <h2>2004</h2>
+                    <p>Started learning how to play piano and even started taking piano lessons</p>
+                </div>
+            </div>
+
+            <div class = "timeContainer left">
+                <div class = "timelineContent">
+                    <h2>2005</h2>
+                    <p> Moved back to NYC to start 3rd grade at Readnet Elementary school in the Bronx, NYC</p>
+                </div>
+            </div>
+
+            <div class = "timeContainer right">
+                <div class = "timelineContent">
+                    <h2>2006-08</h2>
+                    <p>Attended and graduated Harlem day Charter School for 4th-5th grade as part of the school choir and the track team</p>
+                </div>
+            </div>
+
+            <div class = "timeContainer left">
+                <div class = "timelineContent">
+                    <h2>2008-11</h2>
+                    <p>Attended and graduated from Kappa IV middle school as Salutatorian in Harlem, NYC</p>
+                </div>
+            </div>
+
+            <div class = "timeContainer right">
+                <div class = "timelineContent">
+                    <h2>2011-15</h2>
+                    <p>Attended and graduated from Bronx Lab School as the 4th best student of my cohort</p>
+                </div>
+            </div>
+
+            <div class = "timeContainer left">
+                <div class = "timelineContent">
+                    <h2>2015</h2>
+                    <p>Got accepted to attend Clark Atlanta University and majored in Computer Science</p>
+                </div>
+            </div>
+
+            <div class = "timeContainer right">
+                <div class = "timelineContent">
+                    <h2>2019</h2>
+                    <p>Graduated from Clark Atlanta University as Valedictorian of the Class of 2019 with a Bachelors of Science in Computer Science</p>
+                    <p>Started my first job post-grad as an Implementation Consultant for Fast Enterprises</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class ='resume'>
+            <iframe class = 'activeResume' src="files/Keymani Reid_Resume.pdf" width = "100%" height = "1200"></iframe>
+        </div>
+
+        <button onclick="scrollToTop()" class="scrollBtn" title="Scroll Back To Top">Back To Top</button>
+
+
+    <script>
+
+    const container = document.querySelector('div#imageContainer.bgPic');
+    const image = container.querySelector('img#backPic.profilePic');
+    const name = container.querySelector('div.name');
+
+    function showIntro(){
+        document.querySelector('div.intro').style.display = 'block';
+        document.querySelector('div.bio').style.display = 'none';
+        document.querySelector('div.classContainer').style.display = 'none';
+        document.querySelector('div.timeline').style.display = 'none';
+        document.querySelector('div.resume').style.display = 'none';
+    }
+
+    function showBio(){
+        document.querySelector('div.intro').style.display = 'none';
+        document.querySelector('div.bio').style.display = 'block';
+        document.querySelector('div.classContainer').style.display = 'none';
+        document.querySelector('div.timeline').style.display = 'none';
+        document.querySelector('div.resume').style.display = 'none';
+    }
+
+    function showResume(){
+        document.querySelector('div.intro').style.display = 'none';
+        document.querySelector('div.bio').style.display = 'none';
+        document.querySelector('div.classContainer').style.display = 'none';
+        document.querySelector('div.timeline').style.display = 'none';
+        document.querySelector('div.resume').style.display = 'block';
+    }
+
+    function showContact(){
+        document.querySelector('div.intro').style.display = 'none';
+        document.querySelector('div.bio').style.display = 'none';
+        document.querySelector('div.classContainer').style.display = 'block';
+        document.querySelector('div.timeline').style.display = 'none';
+        document.querySelector('div.resume').style.display = 'none';
+    }
+
+    function showTimeline(){
+        document.querySelector('div.intro').style.display = 'none';
+        document.querySelector('div.bio').style.display = 'none';
+        document.querySelector('div.classContainer').style.display = 'none';
+        document.querySelector('div.timeline').style.display = 'block';
+        document.querySelector('div.resume').style.display = 'none';
+    }
+
+    //Scroll Button functionality
+    const myButton = document.querySelector('button.scrollBtn');
+
+    window.onscroll= function() {showScroll()};
+
+    function showScroll()
+    {
+        if(document.body.scrollTop > 275 || document.documentElement.scrollTop > 275){
+            myButton.style.display = 'block';
+        }else{
+            myButton.style.display = 'none';
+        }
+    }
+
+    function scrollToTop() {
+    document.body.scrollTo({top: 0, behavior: 'smooth'})
+    document.documentElement.scrollTo({top: 0, behavior: 'smooth'})
+}
+
+    function calculateMyAge(){
+        const birthday = new Date("1997-10-17");
+        const diff_ms = Date.now() - birthday.getTime();
+        const age_dt = new Date(diff_ms);
+
+        let age =  Math.abs(age_dt.getUTCFullYear() - 1970);
+
+        document.getElementById('age').innerHTML = age;
+
+    }
+
+    </script>
+</body>
+</html>
